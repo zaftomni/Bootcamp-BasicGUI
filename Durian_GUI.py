@@ -5,13 +5,13 @@ from tkinter import ttk, messagebox
 
 GUI = Tk()
 GUI.geometry("500x600")
-GUI.title("Gundam 00")
+GUI.title("โปรแกรมคำนวนราคาทุเรียน ver.0.1")
 
 file = PhotoImage(file = 'durian.png')
 IMG = Label(GUI, image=file,text='')
 IMG.pack()
 
-L1 = Label(GUI,text = "Program calculate durian", font=("Angsana New",30,"bold"),fg='blue')
+L1 = Label(GUI,text = "โปรแกรมคำนวนราคาทุเรียน", font=("Angsana New",30,"bold"),fg='blue')
 L1.pack()
 
 L2 = Label(GUI,text='Input Amount', font=('Angsana New',20))
@@ -32,10 +32,9 @@ def Calculate():
 B1 = ttk.Button(GUI,text='Calculate', command = Calculate)
 B1.pack(ipadx=30,ipady=20,pady=20)
 
-# file = PhotoImage(file='durian.jpg')
-# IMG = Label(GUI,image=file,text='')
-# IMG.pack()
 
-GUI.bind('<F1>',Calculate)
+
+
+GUI.bind('<F2>',Calculate)
 
 GUI.mainloop()
